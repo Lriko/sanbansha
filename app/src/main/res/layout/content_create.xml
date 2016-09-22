@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.activitytest.CreateActivity"
+    tools:showIn="@layout/activity_create"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预言家"
+                android:id="@+id/checkBox"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBox3"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女巫"
+            android:id="@+id/checkBox2"
+            android:layout_alignTop="@+id/checkBox"
+            android:layout_toEndOf="@+id/checkBox"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="猎人"
+            android:id="@+id/checkBox3"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/checkBox2"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白痴"
+            android:id="@+id/checkBox4"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/checkBox3"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吹笛者"
+            android:id="@+id/checkBox5"
+            android:layout_alignTop="@+id/checkBox4"
+            android:layout_toEndOf="@+id/checkBox4"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="58dp"
+        android:id="@+id/relativeLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="狼人数量:"
+            android:id="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1"
+            android:hint="请输入狼人数量"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView1"
+            android:digits="1234567890"
+            android:inputType="number"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="108dp"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="平民数量:"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="请输入平民数量"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:digits="1234567890"
+            android:inputType="number"  />
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="丘比特"
+        android:id="@+id/checkBox7"
+        android:checked="false"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="混混"
+        android:id="@+id/checkBox8"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/checkBox7"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="守卫"
+        android:id="@+id/checkBox6"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/checkBox8"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长老"
+        android:id="@+id/checkBox9"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/checkBox6"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="白狼王"
+        android:id="@+id/checkBox10"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/checkBox9"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="创建游戏"
+        android:id="@+id/button3"
+        android:background="@drawable/shape"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

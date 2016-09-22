@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">三班杀</string>
+    <string name="start_button">开始游戏</string>
+    <string name="rank_button">排行榜</string>
+    <string name="title_activity_create">CreateActivity</string>
+    <string name="create_title">创建游戏</string>
+</resources>
